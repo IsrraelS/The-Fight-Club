@@ -82,59 +82,7 @@ body{
 
 }
 
-#cntPlayerA{
-    width: 22.5em;
-    height: 22.5em;
-    /*border: 0.5px solid black;*/
-    display: flex;
-    flex-direction: column;
-}
-
-#cntPa1{
-    width: 22.5em;
-    height: 11.25em;
-    /*border: 0.1px solid black;*/
-    display: flex;
-    flex-direction: row;
-}
-
-.pig1{
-    width: 11.25em;
-    height: 11.25em;
-    border: 0.1px solid black;
-    background-color:darkgray;
-}
-
-.pig2{
-    width: 11.25em;
-    height: 11.25em;
-    border: 0.1px solid black;
-    background-color:whitesmoke ;
-}
-
-#cntPa2{
-    width: 22.5em;
-    height: 11.25em;
-    /*border: 0.1px solid black;*/
-    display: flex;
-    flex-direction: row;
-}
-
-.pig3{
-    width: 11.25em;
-    height: 11.25em;
-    border: 0.1px solid black;
-    background-color:whitesmoke;
-}
-.pig4{
-    width: 11.25em;
-    height: 11.25em;
-    border: 0.1px solid black;
-    background-color: darkgray;
-    
-}
-
-#cntPlayerB{
+#boxPlayer{
     width: 22.5em;
     height: 22.5em;
   /*border: 0.5px solid black;*/
@@ -156,6 +104,34 @@ body{
     /*border: 0.1px solid black;*/
     display: flex;
     flex-direction: row;
+}
+#pig1{
+    width: 11.25em;
+    height: 11.25em;
+    border: 0.1px solid black;
+    background-color:darkgray;
+}
+
+#pig2{
+    width: 11.25em;
+    height: 11.25em;
+    border: 0.1px solid black;
+    background-color:whitesmoke ;
+}
+
+#pig3{
+    width: 11.25em;
+    height: 11.25em;
+    border: 0.1px solid black;
+    background-color:whitesmoke;
+}
+
+#pig4{
+    width: 11.25em;
+    height: 11.25em;
+    border: 0.1px solid black;
+    background-color: darkgray;
+    
 }
 
 #slcFinal{

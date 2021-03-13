@@ -1,42 +1,24 @@
-let dic1 = document.getElementsByClassName("pig1");
-let dic2 = document.getElementsByClassName("pig2");
-let dic3 = document.getElementsByClassName("pig3");
-let dic4 = document.getElementsByClassName("pig4");
+let dic1 = document.getElementById("pig1");
+let dic2 = document.getElementById("pig2");
+let dic3 = document.getElementById("pig3");
+let dic4 = document.getElementById("pig4");
+
+let player1 = document.getElementById("slcA");
+let player2 = document.getElementById("slcB");
 
 let dictators = [dic1, dic2, dic3, dic4];
 
-// posible solucion con forEach
-/*
-document.querySelectorAll('dictators').forEach(item => {
-    item.addEventsListener('dbclick', () => {
-        return document.getElementById("slcA").innerHTML = selA;
-    })
-})*/
+let select1;
+let select2; 
 
-// no me funciona :(
-
-//----------------------------------------------------
-// segundo intento con forEach
-
-document.addEventListener('dblclick', function () {
-        let selA = dictators[dictators.forEach];
-        return document.getElementById("slcA").innerHTML = selA;
-    })
-
-//da como resultado undifined :(
-
-//------------------------------------------------------
-
-// posible solucion con un bucle for
-
-// cada elemento tendra mediante un bucle for la funcion onclick
-/*
-for (let i = 0; i < dictators.length; i++){
-    
-    dictators[i].addEventListener('dbclick', () => {
-        console.log(i)
-    })
-
-}
-
-document.getElementById("slcA").innerHTML = selA;*/
+$(".pig").click((ev) => {
+    if (select1 == undefined) {
+        select1 = ev;
+        player1.innerHTML = select1;
+        console.log(select1); //esto lo hago para verificar lo que devuelve
+    } else {
+        select2 = ev; 
+        player2.innerHTML = select2;
+        console.log(select2);
+    }
+});
