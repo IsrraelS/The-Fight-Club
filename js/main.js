@@ -9,7 +9,14 @@ let player2 = document.getElementById("slcB");
 let dictators = [dic1, dic2, dic3, dic4];
 
 let select1;
-let select2; 
+let select2;
+
+let myArray = ['rock', 'paper', 'scissors'];
+
+let player1RoundScore = 0;
+let player2RoundScore = 0;
+let player1TotalScore = 0;
+let player2TotalScore = 0;
 
 //funcion para crear el evento y tenerlo en una variable
 $(".pig").click((ev) => {
@@ -26,12 +33,7 @@ $(".pig").click((ev) => {
     console.log(player2);
 });
 
-let myArray = ['rock', 'paper', 'scissors'];
-
-let player1RoundScore = 0;
-let player2RoundScore = 0;
-let player1TotalScore = 0;
-let player2TotalScore = 0;
+// funciones de inicializacion de score 
 
 function setRoundScoreToZero() {
     player1RoundScore = 0;
@@ -43,18 +45,24 @@ function setTotalScoreToZero() {
     player2TotalScore = 0;
 }
 
+// funcion para elegir al azar una de las tres opciones de myArray
+
 function randomPick() {
     return myArray[Math.floor(Math.random() * myArray.length)];
 }
+
+// funcion que genera la eleccion de cada player al azar
 
 function generateRandomPick() {
 
     let player1Pick = randomPick();
     let player2Pick = randomPick();
 
+    // lo que se muestra en pantalla
     $('#player1Pick').html(player1Pick);
     $('#player2Pick').html(player2Pick);
 
+    // declaramos condicionales para elegir ganador de una ronda
     if (player1Pick === 'scissors' && player2Pick === 'paper') {
         player1RoundScore = player1RoundScore + 1;
 
@@ -74,6 +82,7 @@ function generateRandomPick() {
         player2RoundScore = player2RoundScore + 1;
     }
 
+    //condicionales para elegir ganador de ronda
     if (player1RoundScore === 3) {
         player1TotalScore = player1TotalScore + 1;
         setRoundScoreToZero();
@@ -82,6 +91,7 @@ function generateRandomPick() {
         setRoundScoreToZero();
     }
 
+    //condicionales para elegir el ganador final
     if (player1TotalScore === 3) {
         alert('Player 1 Wins!');
         setRoundScoreToZero();
@@ -92,6 +102,7 @@ function generateRandomPick() {
         setTotalScoreToZero();
     }
 
+    //resultados por pantalla
     (function () {
         $('#player1RoundScore').html(player1RoundScore);
         $('#player2RoundScore').html(player2RoundScore);
