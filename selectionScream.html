@@ -13,22 +13,46 @@
         <div id="cntPlayers">
             <div id="boxPlayer">
                 <div id="cntPb1">
-                    <div id="pig1" class="pig">pig1</div>
-                    <div id="pig2" class="pig">pig2</div>
+                    <div id="pig1" class="pig">
+                        <img src="./img/putin.png" alt="pig1" id="putin"></div>
+                    <div id="pig2" class="pig">
+                        <img src="./img/KimD.png" alt="pig2" id="kim"></div>
                 </div>
                 <div id="cntPb2">
-                    <div id="pig3" class="pig">pig3</div>
-                    <div id="pig4" class="pig">pig4</div>
+                    <div id="pig3" class="pig">
+                        <img src="./img/TrumpS.png" alt="pig3" id="trump"></div>
+                    <div id="pig4" class="pig">
+                        <img src="./img/Maburro.png" alt="pig4" id="Maduro"></div>
                 </div>
             </div> 
         </div>
     </div>
-    <div id="slcFinal">
-        <div id="slcA"></div>
-        <div id="slcB"></div> 
-    </div>
-    <div id="btnFight">
-        <button class="Fight">Fight</button>
+    <div id="cntFighters">
+        <div id="slcFinal">
+            <div id="slcA"></div>
+            <div id="slcB"></div> 
+        </div>
+        <div id="cntInfo">
+            <div class="infPlayer1">
+                <div id="player1Pick">Ready!</div>
+                <h3>Total Score</h3>
+                <div id="player1TotalScore">0</div>
+                <h3>Round Score</h3>
+                <div id="player1RoundScore">0</div>
+            </div>
+            <div class="infPlayer2">
+                <div id="player2Pick">Ready!</div>
+                <h3>Total Score</h3>
+                <div id="player2TotalScore">0</div>
+                <h3>Round Score</h3>
+                <div id="player2RoundScore">0</div>
+            </div>
+        </div>
+        <div class="btnStart">
+            <div class="col-12">
+                <button class="btn btn-primary" onclick="generateRandomPick()">START</button>
+            </div>
+        </div>
     </div>
     <script src="./js/main.js"></script>
 </body>
