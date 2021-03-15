@@ -8,6 +8,11 @@ let player2 = document.getElementById("slcB");
 
 let dictators = [dic1, dic2, dic3, dic4];
 
+let imgPig1 = ("../img/putin.png");
+let imgPig2 = ("../img/KimD.png");
+let imgPig3 = ("../img/TrumpS.png");
+let imgPig4 = ("../img/Maburro.png");
+
 let select1;
 let select2;
 
@@ -93,11 +98,11 @@ generateRandomPick = () => {
 
     //condicionales para elegir el ganador final
     if (player1TotalScore === 3) {
-        alert('Player 1 Wins!');
+        alert(select1 + ' Wins!');
         setRoundScoreToZero();
         setTotalScoreToZero();
     } else if (player2TotalScore === 3) {
-        alert('Player 2 Wins!');
+        alert(select2 + ' Wins!');
         setRoundScoreToZero();
         setTotalScoreToZero();
     }
