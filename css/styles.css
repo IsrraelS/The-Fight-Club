@@ -112,11 +112,21 @@ body{
     /*background-color:darkgray;*/
 }
 
+#pig1 :hover{
+    width: 12.5em;
+    height: 12.5em;
+}
+
 #pig2{
     width: 12em;
     height: 11.25em;
     /*border: 0.1px solid black;*/
     /*background-color:whitesmoke;*/
+}
+
+#pig2 :hover{
+    width: 12.5em;
+    height: 12.5em;
 }
 
 #pig3{
@@ -126,13 +136,23 @@ body{
     /*background-color:whitesmoke;*/
 }
 
+#pig3 :hover{
+    width: 12.5em;
+    height: 12.5em;
+}
+
 #pig4{
     width: 12em;
     height: 12em;
     /*border: 0.1px solid black;*/
     /*background-color: darkgray;*/
-    
 }
+
+#pig4 :hover{
+    width: 12.5em;
+    height: 12.5em;
+}
+
 /*-----------------------------------------*/
 #cntFighters{
     width: 70em;
