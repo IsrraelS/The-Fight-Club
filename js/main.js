@@ -103,7 +103,7 @@ generateRandomPick = () => {
     }
 
     //resultados por pantalla
-    (function () {
+    ( funtion = () => {
         $('#player1RoundScore').html(player1RoundScore);
         $('#player2RoundScore').html(player2RoundScore);
         $('#player1TotalScore').html(player1TotalScore);
