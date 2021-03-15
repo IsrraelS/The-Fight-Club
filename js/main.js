@@ -8,15 +8,15 @@ let player2 = document.getElementById("slcB");
 
 let dictators = [dic1, dic2, dic3, dic4];
 
-let imgPig1 = ("../img/putin.png");
-let imgPig2 = ("../img/KimD.png");
-let imgPig3 = ("../img/TrumpS.png");
-let imgPig4 = ("../img/Maburro.png");
+let imgPutin = document.getElementById("putin");
+let imgKim = document.getElementById("kim");
+let imgTrump = document.getElementById("trump");
+let imgMaduro = document.getElementById("maduro");
 
 let select1;
 let select2;
 
-let myArray = ['rock', 'paper', 'scissors'];
+let arrayRPS = ['rock', 'paper', 'scissors'];
 
 let player1RoundScore = 0;
 let player2RoundScore = 0;
@@ -50,10 +50,10 @@ setTotalScoreToZero = () => {
     player2TotalScore = 0;
 }
 
-// funcion para elegir al azar una de las tres opciones de myArray
+// funcion para elegir al azar una de las tres opciones de arrayRPS
 
 randomPick = () => {
-    return myArray[Math.floor(Math.random() * myArray.length)];
+    return arrayRPS[Math.floor(Math.random() * arrayRPS.length)];
 }
 
 // funcion que genera la eleccion de cada player al azar
@@ -98,11 +98,11 @@ generateRandomPick = () => {
 
     //condicionales para elegir el ganador final
     if (player1TotalScore === 3) {
-        alert(select1 + ' Wins!');
+        alert(`${select1} Wins!`);
         setRoundScoreToZero();
         setTotalScoreToZero();
     } else if (player2TotalScore === 3) {
-        alert(select2 + ' Wins!');
+        alert(`${select2} Wins!`);
         setRoundScoreToZero();
         setTotalScoreToZero();
     }
