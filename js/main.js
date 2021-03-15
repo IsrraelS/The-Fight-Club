@@ -35,25 +35,25 @@ $(".pig").click((ev) => {
 
 // funciones de inicializacion de score 
 
-function setRoundScoreToZero() {
+setRoundScoreToZero = () => {
     player1RoundScore = 0;
     player2RoundScore = 0;
 }
 
-function setTotalScoreToZero() {
+setTotalScoreToZero = () => {
     player1TotalScore = 0;
     player2TotalScore = 0;
 }
 
 // funcion para elegir al azar una de las tres opciones de myArray
 
-function randomPick() {
+randomPick = () => {
     return myArray[Math.floor(Math.random() * myArray.length)];
 }
 
 // funcion que genera la eleccion de cada player al azar
 
-function generateRandomPick() {
+generateRandomPick = () => {
 
     let player1Pick = randomPick();
     let player2Pick = randomPick();
